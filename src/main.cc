@@ -189,7 +189,7 @@ int main (int argc, char *argv[])
   }
 
   fprintf(stderr, "init VGA(320x200), bye\n");
-  if (set_gfx_mode(GFX_AUTODETECT, screen_w, screen_h, 0, 0) < 0) {
+  if (set_gfx_mode(GFX_AUTODETECT_WINDOWED, screen_w, screen_h, 0, 0) < 0) {
     printf ("VGA could not been init\n%s\n", allegro_error);
     allegro_exit();
     exit(0);
