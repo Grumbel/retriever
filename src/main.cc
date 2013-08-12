@@ -127,6 +127,11 @@ int main (int argc, char *argv[])
     fprintf(stderr, "Arguments correct\n");
   }
 
+  /* Install all the allegro stuff */
+  allegro_init();
+  install_timer();
+  install_keyboard();
+
   // time_t now;
   // time(&now);
   // printf("The current time is %s", asctime(localtime(&now)));
@@ -152,11 +157,6 @@ int main (int argc, char *argv[])
     screen_pal[i].g = grey[i].g = i/4;
     screen_pal[i].b = grey[i].b = i/4;
   }
-
-  /* Install all the allegro stuff */
-  allegro_init();
-  install_timer();
-  install_keyboard();
 
   /* get config data from file  */
 
