@@ -1,0 +1,24 @@
+Retriever
+~~~~~~~~~
+Idee, Grafik, Programmierung
+Ingo Ruhnke
+
+Musik
+Till Hellweg
+
+Support
+Patrick Schmidt
+
+Mogli-Sprite
+unknown
+
+Dank an
+Shawn Hargreaves fÅr Allegro
+
+DJ Delorie fÅr DJGPP
+
+
+~~~
+
+weitere Infos unter
+http://home.pages.de/~retriever/

@@ -1,0 +1,49 @@
+########################################################
+#     _____________________  ________   _____________  #
+#    /  __ \  __/______/__ \/  /  __/| / /  ___/  __ \ #
+#   /    __/ /_  /  /    __/  /  /_| |/ /  /_ /    __/ #
+#  /  /  \  /__ /  /  /  \/  /  /_ | / /  /__/  /  \   #
+# /__/ \__\___//__/__/ \__\_/_____/|__/_____/__/ \__\  #
+#                      Makefile                        #
+#                   by Ingo Ruhnke                     #
+#               email: grumbel@gmx.de                  #
+########################################################
+
+obj_path = ../obj/
+exe_path = ../
+
+objects = $(obj_path)main.o     \
+          $(obj_path)func.o     \
+          $(obj_path)room.o  \
+          $(obj_path)dos_func.o \
+          $(obj_path)function.o \
+          $(obj_path)add_aleg.o \
+          $(obj_path)guy.o
+
+$(exe_path)retriev.exe : $(objects)
+	gxx $(objects) -o $(exe_path)retriev.exe -lalleg -O2 -Wall -s
+
+$(obj_path)main.o : main.cc room.h guy.h objects.h function.h prototyp.h dos_func.h add_aleg.h
+	gcc -c main.cc -o $(obj_path)main.o -O2 -Wall 
+
+$(obj_path)guy.o : guy.cc guy.h
+	gcc -c guy.cc -o $(obj_path)guy.o
+
+$(obj_path)function.o : function.cc objects.h
+	gcc -c function.cc -o $(obj_path)function.o -O2 -Wall
+
+$(obj_path)room.o : room.cc room.h objects.h prototyp.h function.h dos_func.h
+	gcc -c room.cc -o $(obj_path)room.o -O2 -Wall
+
+$(obj_path)dos_func.o : dos_func.cc  objects.h function.h
+	gcc -c dos_func.cc -o $(obj_path)dos_func.o -O2 -Wall
+
+$(obj_path)func.o : func.cc prototyp.h
+	gcc -c func.cc -o $(obj_path)func.o -O2 -Wall
+
+$(obj_path)add_aleg.o : add_aleg.cc add_aleg.h
+	gcc -c add_aleg.cc -o $(obj_path)add_aleg.o -O2 -Wall
+
+.PHONY: clean
+clean :
+	rm $(objects)

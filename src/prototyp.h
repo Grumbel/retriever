@@ -1,0 +1,18 @@
+int  get_object(int room);
+void print_text(BITMAP *text_buf, char *str, int *x_pos, int *y_pos);
+void split_str(char *str);
+int  split_strlen(char *str);
+void edit_text_screen(BITMAP *screen);
+void init_mouse_sprite();
+void intro();
+void smooth(BITMAP *scr, int x1, int y1, int x2, int y2);
+void fade2bitmap(BITMAP *scr2);
+void redraw_screen();
+void clear_inv();
+void show_inv();
+void put_to_inv(int object, int act_room);
+void draw_pcx_sprite_stretch(BITMAP *scr, char *filename, int x, int y, int w, int h);
+void show_command_help();
+void set_gamma(float gamma);
+void fscroll(char *filename, int speed);
+void show_file(char *filename);

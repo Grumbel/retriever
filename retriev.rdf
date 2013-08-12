@@ -1,0 +1,384 @@
+;        _____________________  ________   _____________
+;       /  __ \  __/______/__ \/  /  __/| / /  ___/  __ \
+;      /    __/ /_  /  /    __/  /  /_| |/ /  /_ /    __/
+;     /  /  \  /__ /  /  /  \/  /  /_ | / /  /__/  /  \
+;    /__/ \__\___//__/__/ \__\_/_____/|__/_____/__/ \__\
+; Retriever Data File, This file is always under construction
+;                hack it at your own risk :)
+
+#0
+; Raum 0
+; rechts Gateway
+; im Haus
+; Background Data
+
+graphics/1.pcx
+graphics/1_map.pcx
+
+TakeMe
+graphics/takeme.pcx
+Dieses Ding sollte man eigentlich nehmen können.
+118 151 240
+118 150 135 162
+125 158 2
+2
+
+Baum
+graphics/baum.pcx ; Bla Blub
+Dieser komische Baum ist wohl durchs Dach gewachsen.
+  0   88 255
+ 25 35 65 160
+ 75 140 2
+0
+
+Cube
+graphics/cube.pcx
+Dieses ist ein Wuerfel
+ 90 150 255
+ 90 150 110 170
+ 95 162 2
+2
+
+
+Odd
+graphics/odd.pcx
+Was ist den das für ein komisches Ding?
+170  90 230
+181  93 200 113
+161 156 1
+0
+
+
+Tuer
+-
+Sieht aus wie ein Tür.
+ 1  2  0
+100  90 142 110
+121 115 0
+1 1 146 146
+
+
+Gateway
+-
+Was ist das für ein komisches Ding und es leuchtet auch noch sehr starkt.
+ 3  4  0
+200  45 278 138
+220 133 1
+1 2 220 142
+
+
+Loch
+-
+Wie ist das Loch nur in die Decke gekommen?
+ 5  6  0 ;is this use full or useless ?
+125   4 175  56
+160 138 0
+0
+
+
+#1
+; Raum 1
+; au erhalb des Start Hauses
+
+graphics/3.pcx
+graphics/3_map.pcx
+
+
+Tuer
+-
+Durch diese Tür komme ich in das Haus.
+ 0  0  0
+124 109 185 140
+153 140 0
+1 0 121 117
+
+
+Metall Platte
+-
+Wo kommt wohl diese Metallplatte her?
+ 0  0  0
+ 43 159  80 172
+ 61 158 2
+0
+
+
+Satelliten Anlage
+-
+Vielleicht finde ich irgendwo eine Steuervorrichtung für die Satelliten Anlage.
+ 0  0  0
+115  10 165  57
+133 174 0
+0
+
+
+Riss
+-
+Vielleicht kann ich hinter dem Riss etwas entdecken.
+ 0  0  0
+239 110 264 132
+242 148 0
+0
+
+
+Pflanze
+-
+Von dieser Pflanze stehen hier mehrere herum, sie scheinen sehr robust.
+ 0  0  0
+ 38 115  51 137
+ 47 141 0
+0
+
+
+naechster_Raum
+-
+Hier gehts weiter im Dorf
+ 0 0 0
+ 0 30 20 180
+ 10 170 3
+1 3 290 158
+
+
+Pflanze
+graphics/pflanze.pcx
+Die Pflanze sieht irgedwie merkwürdig aus.
+ 104  146  194
+103 147 115 172
+ 96 172 1
+0
+
+
+#2
+; Raum 2
+; Raum hinter dem Gateway
+
+graphics/4.pcx
+graphics/4_map.pcx
+
+
+Gateway
+-
+Dieses ist ein ziemlich misteriöses Tor
+0 0 0
+224  80 265 148
+225 142 1
+1 0 207 133
+
+
+Pflanze
+graphics/pflanze4.pcx
+Das ist eine von diesen komischen Pflanzen. Von denen habe ich hier schon einige gesehen.
+188 131 203
+189 133 201 153
+182 154 1
+0
+
+
+Baum
+-
+Der Baum hier ist ziemlich gro , er steht hier wohl schon länger.
+ 0 0 0
+ 75   0 147 127
+111 175 0
+ 0
+
+
+Ruinen
+-
+Da hier nun schon Bäume wachsen muss dieses Haus schon lange zerstört sein.
+0 0 0
+165  54 291 141
+203 146 0
+0
+
+
+#3
+ ; zweites Haus im Dorf
+ ; mit zerstörter Tür
+
+graphics/dorf1.pcx
+graphics/dorf_map.pcx
+
+
+Haus 2
+-
+Hier gehts zurück zum Hauphaus
+0 0 0
+295 118 319 180
+311 163 1
+1 1 10 160
+
+
+Schalttafel
+-
+Sieht aus wie eine Schalttafel
+0 0 0
+106 127 122 141
+116 164 0
+0
+
+
+zerstörte Tür
+-
+Diese Tür ist völlig zerstört und jetzt ist dort ein Loch im Haus.
+0 0 0
+138 106 194 151
+165 152 3
+0
+
+
+großes Tor
+-
+Dieses gro e Tor ist vermutlich der einzige Weg aus dieser Stadt.
+0 0 0
+293 100 319 121
+300 136 0
+1 4 10 160 
+
+
+drittes Haus
+-
+Dieses ist eines von drei Häusern, die in diesem Dorf stehen.
+0 0 0
+234 97 294 131
+262 140 0
+0
+
+
+#4
+ ; Grosses Tor
+ ; das Tor fuehrt aus dem Dorf heraus
+
+graphics/tor.pcx
+graphics/tor_map.pcx
+
+
+Konsole
+graphics/4_knsle.pcx
+Das Ding sollte ich vielleicht mal benutzen um das Tor zu oeffnen.
+118 159 228
+132 165 155 190
+122 192 1
+3 graphics/konsole.pcx
+
+
+Dorf
+-
+Hier geht zurück ins Dorf.
+0 0 0
+0 100 20 180
+14 176 3
+1 3 290 158
+
+
+großes Tor
+graphics/tor_offen2.pcx
+Dieses Tor ist wohl der einzige Weg aus diesem Dorf.
+155 13 0
+165 42 272 170
+203 173 0
+1 5 85 160
+
+
+#5
+ ; Außerhalb des Dorfes
+
+graphics/tor2.pcx
+graphics/tor2_map.pcx
+
+
+offenes Tor
+-
+Hier gehts wieder ins Dorf zurück.
+0 0 0
+16 34 82 160
+58 171 3
+1 4 235 175 
+
+
+Weg
+-
+Dieser Weg führt an der Mauer entlang.
+0 0 0
+120 92 150 120
+137 115 0
+0
+
+
+Tunnel
+-
+Mal schauen wo dieser Tunnel hinführt.
+0 0 0
+217 98 265 145
+234 144 1
+1 6 20 95
+
+#6
+; Berg
+graphics/berg.pcx
+graphics/berg_map.pcx
+
+Tunnel
+-
+Hier gehts zurück zum Dorf.
+0 0 0
+6 33 74 94
+37 95 0
+1 5 236 141
+
+Weg
+-
+Hier gehts weiter.
+0 0 0
+177 35 232 96
+202 84 0
+1 7 30 126
+
+; Eingang für Höhle
+#7
+graphics/moun.pcx
+graphics/moun_map.pcx
+
+Weg
+-
+Hier gehts wieder zurück.
+0 0 0
+  0  40  35 175
+ 30 126 3
+1 6 20 95
+
+Weg
+-
+Hier gehts in eine Höhle hinein.
+0 0 0
+150 68 195 121
+173 124 0
+1 8 100 137
+
+#8
+; Höhle
+graphics/cave.pcx
+graphics/cave_map.pcx
+
+Weg
+-
+Hier gehts zurück nach draußen.
+0 0 0
+75  87 113 134
+102 136 0
+1 7 173 124
+
+Stein
+graphics/stone.pcx
+Dieser Stein steht wohl im Wasser.
+221 140 255
+225 143 260 176
+242 153 2
+0
+
+Wasser 
+-
+Wenn ich einen Behälter hätte könnte ich vielleicht etwas Wasser mit nehmen.
+0 0 0
+140 160 320 200
+170 175 2
+0
