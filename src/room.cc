@@ -1,3 +1,4 @@
+#include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
 #include "room.h"
@@ -156,6 +157,8 @@ void rooms::print_data()
  * for a description of the rdf-fileformat see README.TXT */
 int rooms::get_data(char *filename, int act_room)
 {
+  std::cout << "rooms::get_data: " << filename << std::endl;
+
     FILE *in;
     char line[256];
     int  x, i=0;
@@ -257,10 +260,13 @@ int rooms::get_data(char *filename, int act_room)
        BITMAP *temp_sprite;
        RGB temp_sprite_pal[256];
 
-       for(i=0; i<number_of_objects; ++i) {
-	 if (object[i].sprite_name[0] != '-') {
-	   if (!(temp_sprite = load_pcx(object[i].sprite_name,
-					temp_sprite_pal))) {
+       for(i=0; i<number_of_objects; ++i) 
+       {
+	 if (object[i].sprite_name[0] != '-') 
+         {
+           std::cout << "loading: " << object[i].sprite_name << std::endl;
+	   if (!(temp_sprite = load_pcx(object[i].sprite_name, temp_sprite_pal))) 
+           {
 	     allegro_exit();
 	     perror(object[i].sprite_name);
 	     exit(EXIT_FAILURE);

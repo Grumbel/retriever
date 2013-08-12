@@ -59,7 +59,7 @@ RGB rgb_color(unsigned char r, unsigned char g, unsigned char b)
 }
 
 /* draws a pcx-file direct from file  */
-void draw_pcx(BITMAP *scr, char *filename, int x, int y)
+void draw_pcx(BITMAP *scr, const char *filename, int x, int y)
 {
  BITMAP *pcx_file;
  RGB palette[256];
@@ -75,7 +75,7 @@ void draw_pcx(BITMAP *scr, char *filename, int x, int y)
 }
 
 /* same as draw_pcx(), but it draws a sprite  */
-void draw_pcx_sprite(BITMAP *scr, char *filename, int x, int y)
+void draw_pcx_sprite(BITMAP *scr, const char *filename, int x, int y)
 {
  BITMAP *pcx_file;
  RGB palette[256];
@@ -91,7 +91,7 @@ void draw_pcx_sprite(BITMAP *scr, char *filename, int x, int y)
 
 /* same as draw_pcx_sprite, but it draws a stretched sprite */
 void draw_pcx_sprite_stretch
-(BITMAP *scr, char *filename, int x, int y, int w, int h)
+(BITMAP *scr, const char *filename, int x, int y, int w, int h)
 {
  BITMAP *pcx_file;
  RGB palette[256];

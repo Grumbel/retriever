@@ -60,7 +60,7 @@ void load_status()
      _alert("Datei",
 	    get_filename(savegame_file),
 	    "nicht gefunden!",
-	    "Ok", NULL, KEY_ENTER, NULL);
+	    "Ok", NULL, KEY_ENTER, 0);
    } else {
      load_game(savegame_file);
      return;

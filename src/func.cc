@@ -10,7 +10,7 @@
 //#include <logalloc.h>
 
 /* reads file and display it with scroll() */
-void fscroll(char *filename, int speed)
+void fscroll(const char *filename, int speed)
 {
  char **str;
  int lines;
@@ -41,7 +41,7 @@ void fscroll(char *filename, int speed)
  free(str);
 }
 
-void show_file(char *filename)
+void show_file(const char *filename)
 {
  char **str;
  int lines;

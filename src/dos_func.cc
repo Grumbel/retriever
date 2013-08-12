@@ -12,7 +12,7 @@
 
 #define COMMENT_CHAR ';'
 
-int fget_lines(char *filename)
+int fget_lines(const char *filename)
 {
  FILE *in;
  int lines;
@@ -32,7 +32,7 @@ int fget_lines(char *filename)
  return lines;
 }
 
-int get_txt_file(char *filename, char **str)
+int get_txt_file(const char *filename, char **str)
 {
  FILE *in;
  char buffer[105];
@@ -157,7 +157,7 @@ void arg_help()
 }
 
 /* finds the first char in the a line  */
-char first_char(char *line)
+char first_char(const char *line)
 {
  int i;
  for(i=0; !isgraph(line[i]) && line[i] != '\0'; ++i);
