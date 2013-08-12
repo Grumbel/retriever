@@ -59,7 +59,7 @@ public:
  void put_direct();
  void remove();
  void get_temp_bitmap();
- void guys::get_temp_bitmap_scr(BITMAP *scr);
+ void get_temp_bitmap_scr(BITMAP *scr);
  void stand();
  void get_walkto_pos();
  bool path_walkable();

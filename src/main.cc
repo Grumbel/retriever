@@ -8,7 +8,6 @@
 
 #include <stdio.h>
 #include <unistd.h>
-#include <conio.h>
 #include <string.h>
 #include <time.h>
 //#include <logalloc.h>
@@ -35,9 +34,9 @@ char retriever_version[]={"V0.1Beta"};
 
 volatile int uhr;
 
-void uhr_laufen(...);
+void uhr_laufen();
 
-void uhr_laufen(...)
+void uhr_laufen()
 {
   ++uhr;
 }
@@ -87,7 +86,7 @@ int main (int argc, char *argv[])
 	break;
     }
   }
-#ifdef 0
+#if 0
   for (int i=1; i<argc; ++i) {
 
     if (stricmp(argv[i], "-nointro") == 0) {
@@ -141,7 +140,7 @@ int main (int argc, char *argv[])
     printf("============\n");
     room[show_room].print_data();
     puts("============================================================\n");
-    getch();
+    getchar();
   }
 
   // init grey pallete

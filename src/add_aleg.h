@@ -11,7 +11,7 @@ void backup_scr(BITMAP **tmp);
 void restore_scr(BITMAP **tmp);
 void _backup_scr(BITMAP **tmp);
 void _restore_scr(BITMAP **tmp);
-int  _alert(char *s1, char *s2, char *s3, char *b1, char *b2, int c1, int c2);
+int  _alert(const char *s1, const char *s2, const char *s3, const char *b1, const char *b2, int c1, int c2);
 RGB  rgb_color(unsigned char r, unsigned char g, unsigned char b);
 void draw_pcx(BITMAP *scr, char *filename, int x, int y);
 void draw_pcx_sprite(BITMAP *scr, char *filename, int x, int y);

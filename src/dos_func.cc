@@ -1,11 +1,14 @@
 #include <stdio.h>
-#include <conio.h>
 #include <allegro.h>
 #include <ctype.h>
 
 #include "objects.h"
 #include "function.h"
 #include "add_aleg.h"
+
+// old conio.h stuff, disabled to make it work in Linux
+#define textattr(x)
+#define textcolor(x)
 
 #define COMMENT_CHAR ';'
 
@@ -115,17 +118,17 @@ void show_about()
 void retriever_exit(int error_code)
 {
  allegro_exit();
- cprintf("Thank you for playing ");
+ printf("Thank you for playing ");
  textattr(143);
- cprintf("Retriever ");
+ printf("Retriever ");
  textcolor(11);
- cprintf("%s\n\r\n\r", retriever_version);
+ printf("%s\n\r\n\r", retriever_version);
  textcolor(15);
- cprintf("a game by Ingo Ruhnke\n\r");
+ printf("a game by Ingo Ruhnke\n\r");
  textcolor(7);
- cprintf("email: grumbel@gmx.de\n\r");
+ printf("email: grumbel@gmx.de\n\r");
  textcolor(8);
- cprintf("www: http://home.pages.de/~retriever/\n\r");
+ printf("www: http://home.pages.de/~retriever/\n\r");
  exit(error_code);
 }
 

@@ -1,5 +1,5 @@
-env = Environment(CXXFLAGS = [ '-g', '-Wall', '-Wno-deprecated-declarations' ],
+env = Environment(CXXFLAGS = [ '-O0', '-g', '-Wno-deprecated-declarations' ],
                   LIBS     = [ 'alleg' ])
-env.Program('vect', Glob('src/*.cc'))
+env.Program('retriever', Glob('src/*.cc'))
 
 # EOF #
